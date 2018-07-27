@@ -13,12 +13,10 @@ BOT_NAME = 'resocode'
 
 SPIDER_MODULES = ['resocode.spiders']
 NEWSPIDER_MODULE = 'resocode.spiders'
-
+LOG_ENABLED = False
 
 ITEM_PIPELINES = {
-   'resocode.pipelines.ResocodePipeline': 300,
-}
-
+   'resocode.pipelines.ResocodePipeline': 300,}
 # FEED_URI = 'file:///Users/aaronbrandhagen/Desktop/pythonprojects/resocode/resocode/links.jl'
 # FEED_FORMAT = 'json'
 # FEED_EXPORT_FIELDS = ['title', 'link', 'date']
