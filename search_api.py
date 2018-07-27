@@ -9,8 +9,11 @@ import resocode.spiders.rescode as rc
 from bs4 import BeautifulSoup as bb
 import requests
 
+from scrapy.crawler import Crawler
+
 r = rc.RescodeSpider
 r.download_delay=10
+
 
 @click.command()
 @click.option('--search', prompt='Enter search string here: ')
